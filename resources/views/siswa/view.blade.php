@@ -1,3 +1,5 @@
+@extends("layouts.app")
+@section("content")
 <table border="1">
 	<tr>
 		<td><a href="{{route('siswa.Add')}}">Add</a></td>
@@ -20,3 +22,4 @@
 		</tr>
 	@endforeach 
 </table>
+@endsection

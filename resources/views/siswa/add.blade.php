@@ -1,3 +1,5 @@
+@extends("layouts.app")
+@section("content")
 <form action="{{ route('siswa.CreateAdd') }}" method="POST">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">		
 		<input type="text" placeholder="NIS" name="nis"> <br>
@@ -6,3 +8,4 @@
 		<br>		
 		<input type="submit" value="Simpan">
 </form>
+@endsection
